@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./NOMBRE_DE_TU_CARPETA
+        working-directory: ./package
     steps:
       - name: Checkout
         uses: actions/checkout@v4
