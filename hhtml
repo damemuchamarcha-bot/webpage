@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dame Marcha | Cine y Música Neo-Punk</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700;900&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #121212; color: #f3f3f3; }
+    h1, h2, h3, .punk-font { font-family: 'Space Grotesk', sans-serif; }
+    .bg-pink { background-color: #FF007F; }
+    .bg-yellow { background-color: #FFE600; }
+    .text-pink { color: #FF007F; }
+    .text-yellow { color: #FFE600; }
+    .border-punk { border: 3px solid #000; box-shadow: 4px 4px 0px #FF007F; }
+    .border-punk-yellow { border: 3px solid #000; box-shadow: 4px 4px 0px #FFE600; }
+  </style>
+</head>
+<body class="bg-[#121212] text-gray-100 min-h-screen flex flex-col">
+
+  <!-- HEADER / MENÚ -->
+  <header class="bg-black border-b-4 border-[#FF007F] sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <!-- Logo -->
+      <a href="#" class="text-3xl font-black tracking-tighter text-black bg-yellow px-3 py-1 -rotate-1 inline-block border-2 border-black hover:rotate-0 transition-transform">
+        DAME MARCHA
+      </a>
+
+      <!-- Menú Desktop -->
+      <nav class="hidden md:flex space-x-6 font-bold text-sm tracking-wide">
+        <a href="#" class="hover:text-yellow transition-colors">HOME</a>
+        <div class="relative group">
+          <button class="hover:text-pink flex items-center gap-1">CINE ▼</button>
+          <div class="absolute hidden group-hover:block bg-black border-2 border-pink p-2 w-48 space-y-2 mt-1">
+            <a href="#" class="block hover:bg-pink hover:text-black p-1">Próximos Estrenos</a>
+            <a href="#" class="block hover:bg-pink hover:text-black p-1">Análisis de Cine</a>
+            <a href="#" class="block hover:bg-pink hover:text-black p-1">Crítica de Cine</a>
+          </div>
+        </div>
+        <div class="relative group">
+          <button class="hover:text-yellow flex items-center gap-1">MÚSICA ▼</button>
+          <div class="absolute hidden group-hover:block bg-black border-2 border-yellow p-2 w-48 space-y-2 mt-1">
+            <a href="#" class="block hover:bg-yellow hover:text-black p-1">Análisis de Álbumes</a>
+            <a href="#" class="block hover:bg-yellow hover:text-black p-1">Directos</a>
+          </div>
+        </div>
+        <a href="#" class="hover:text-pink transition-colors">SOBRE NOSOTRAS</a>
+      </nav>
+
+      <!-- Botón Menú Móvil (3 rayitas) -->
+      <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="md:hidden text-yellow text-2xl font-bold">
+        ☰
+      </button>
+    </div>
+
+    <!-- Menú Desplegable Móvil -->
+    <div id="mobile-menu" class="hidden md:hidden bg-black border-t-2 border-yellow p-4 space-y-3 font-bold">
+      <a href="#" class="block text-white hover:text-pink">Home</a>
+      <p class="text-yellow text-xs mt-2 uppercase">Cine</p>
+      <a href="#" class="block pl-4 text-sm text-gray-300">Próximos Estrenos</a>
+      <a href="#" class="block pl-4 text-sm text-gray-300">Análisis de Cine</a>
+      <a href="#" class="block pl-4 text-sm text-gray-300">Crítica de Cine</a>
+      <p class="text-pink text-xs mt-2 uppercase">Música</p>
+      <a href="#" class="block pl-4 text-sm text-gray-300">Análisis de Álbumes</a>
+      <a href="#" class="block pl-4 text-sm text-gray-300">Directos</a>
+      <a href="#" class="block text-white hover:text-yellow mt-4">Sobre Nosotras</a>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL -->
+  <main class="max-w-6xl mx-auto px-4 py-8 flex-grow space-y-12">
+
+    <!-- HERO / ARTÍCULO DESTACADO -->
+    <section class="bg-[#1a1a1a] p-4 md:p-6 border-punk rounded-none">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=800&q=80" alt="Concierto Punk" class="w-full h-64 md:h-80 object-cover border-2 border-black">
+        <div class="space-y-4">
+          <span class="bg-pink text-black font-extrabold px-2 py-1 text-xs uppercase tracking-widest border border-black">MÚSICA // DIRECTOS</span>
+          <h1 class="text-3xl md:text-5xl font-black leading-tight hover:text-yellow transition-colors cursor-pointer">
+            EL RETORNO DEL RUIDO: LA NUEVA OLA DE SALAS SUBTERRÁNEAS
+          </h1>
+          <p class="text-gray-300 text-sm">
+            Analizamos la resistencia musical urbana en directo y cómo las salas independientes están salvando el circuito local.
+          </p>
+          <div class="text-xs text-yellow font-mono">Por Carmen Martínez — Hace 2 horas</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EJEMPLO DE ENTRADA CON BLOQUES (TEXTO, FOTO, YOUTUBE, SPOTIFY) -->
+    <section class="bg-[#181818] p-6 md:p-10 border-punk-yellow max-w-4xl mx-auto space-y-6">
+      <div class="border-b-2 border-yellow pb-4">
+        <span class="bg-yellow text-black font-bold px-2 py-1 text-xs">CRÍTICA DE CINE</span>
+        <h2 class="text-3xl md:text-4xl font-black mt-2">RETROFUTURISMO Y PUNK EN EL CINE MODERNO</h2>
+        <p class="text-xs text-gray-400 mt-1">Por Redacción Dame Marcha</p>
+      </div>
+
+      <!-- Párrafo de texto -->
+      <p class="text-gray-300 leading-relaxed">
+        El cine no solo se mira, se siente como un impacto directo en la cabeza. Las nuevas narrativas visuales recuperan la suciedad y la energía de los primeros anuncios de PS2 y los fanzines de fotocopia.
+      </p>
+
+      <!-- Bloque de Imagen integrada -->
+      <figure class="my-6">
+        <img src="https://images.unsplash.com/photo-1485846234645-a62644f84728?auto=format&fit=crop&w=800&q=80" alt="Proyector de Cine" class="w-full h-64 object-cover border-2 border-pink">
+        <figcaption class="text-xs text-gray-400 mt-2 italic text-center">Fotograma en proyección analógica.</figcaption>
+      </figure>
+
+      <!-- Párrafo con Cita destacada -->
+      <blockquote class="border-l-4 border-pink bg-black p-4 text-xl font-bold italic text-yellow my-6">
+        "El cine punk no pide permiso, rompe la pantalla y te obliga a mirar."
+      </blockquote>
+
+      <p class="text-gray-300 leading-relaxed">
+        A continuación os dejamos un tráiler de referencia y la lista de reproducción que acompaña a la crítica:
+      </p>
+
+      <!-- Bloque Widget Vídeo de YouTube -->
+      <div class="aspect-video w-full my-6 border-2 border-black">
+        <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- Bloque Widget Reproductor de Spotify -->
+      <div class="my-6">
+        <iframe style="border-radius:0px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX3LD1L123M91?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FALDÓN / FOOTER DE CONTACTO -->
+  <footer class="bg-black border-t-4 border-yellow mt-12 py-8 px-4">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 text-center md:text-left">
+      <div>
+        <span class="text-2xl font-black bg-pink text-black px-2 py-1 inline-block -rotate-1">DAME MARCHA</span>
+        <p class="text-xs text-gray-400 mt-3">Medio de comunicación independiente sobre cultura, cine y música con actitud punk y estética dosmilera.</p>
+      </div>
+      <div>
+        <h4 class="text-yellow font-bold mb-2">SECCIONES</h4>
+        <ul class="text-xs space-y-1 text-gray-300">
+          <li>• Próximos Estrenos</li>
+          <li>• Análisis de Cine</li>
+          <li>• Crítica de Música</li>
+          <li>• Directos</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-pink font-bold mb-2">SÍGUENOS</h4>
+        <div class="flex justify-center md:justify-start space-x-4 text-sm font-bold">
+          <a href="#" class="hover:text-yellow">Instagram</a>
+          <a href="#" class="hover:text-yellow">Spotify</a>
+          <a href="#" class="hover:text-yellow">LinkedIn</a>
+          <a href="#" class="hover:text-yellow">YouTube</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
